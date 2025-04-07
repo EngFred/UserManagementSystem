@@ -33,8 +33,7 @@ public class RegisterServlet extends HttpServlet {
         boolean result = userService.registerUser(user);
 
         if(result) {
-            request.setAttribute("success", "Registration successful!");
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("login.jsp?success=1");
         } else {
             request.setAttribute("error", "Something went wrong. Please try again.");
             request.getRequestDispatcher("register.jsp").forward(request, response);

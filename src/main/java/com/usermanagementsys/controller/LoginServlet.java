@@ -22,6 +22,7 @@ public class LoginServlet extends HttpServlet {
 
         if(result != null) {
             HttpSession httpSession = request.getSession();
+            httpSession.setAttribute("success", "Logged in successfully!");
             httpSession.setAttribute("user", result);
             response.sendRedirect("dashboard.jsp");
         } else {

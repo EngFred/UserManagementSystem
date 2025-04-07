@@ -17,7 +17,26 @@
     <servlet-name>LogoutServlet</servlet-name>
     <servlet-class>com.usermanagementsys.controller.LogoutServlet</servlet-class>
   </servlet>
-
+  <servlet>
+    <servlet-name>EditUserServlet</servlet-name>
+    <servlet-class>com.usermanagementsys.controller.EditUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.usermanagementsys.controller.DeleteUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <servlet-class>com.usermanagementsys.controller.ForgotPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <servlet-class>com.usermanagementsys.controller.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VerifyTempPasswordServlet</servlet-name>
+    <servlet-class>com.usermanagementsys.controller.VerifyTempPasswordServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>RegisterServlet</servlet-name>
@@ -32,6 +51,31 @@
   <servlet-mapping>
     <servlet-name>LogoutServlet</servlet-name>
     <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>EditUserServlet</servlet-name>
+    <url-pattern>/edit_user</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/delete_user</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ForgotPasswordServlet</servlet-name>
+    <url-pattern>/forgot_password</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <url-pattern>/reset_password</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>VerifyTempPasswordServlet</servlet-name>
+    <url-pattern>/verify_temp_password</url-pattern>
   </servlet-mapping>
 
 </web-app>
